@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sunnyside agency landing page | Frontend Mentor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="hero">
+      <div class="wrapper">
+        <nav class="hero_nav">
+          <div class="hero_nav-logo">
+            <img src="./images/logo.svg" height="30px" alt="website_logo" />
+          </div>
+          <div class="breadcrumb">
+            <img
+              src="./images/icon-hamburger.svg"
+              width="30px"
+              alt="hamburger_menu"
+            />
+          </div>
+          <ul class="nav-links">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <h1 class="hero_title">We are creatives</h1>
+        <img
+          src="./images/icon-arrow-down.svg"
+          alt="Arrow_dowm"
+          class="hero_arrow"
+        />
+      </div>
+    </section>
+
+    <section class="trans-out" id="transform">
+      <div class="content">
+        <h1>Transform your brand</h1>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="img">
+        <img src="./images/desktop/image-transform.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="trans-out" id="stand-out">
+      <div class="content">
+        <h1>Stand out to the right audience</h1>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="img">
+        <img src="./images/desktop/image-stand-out.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="half-info">
+      <div class="half-info" id="graphic-design">
+        <div class="wrapper">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div class="half-info" id="photography">
+        <div class="wrapper">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Client testimonials</h2>
+      <div class="wrapper">
+        <div class="client">
+          <div class="avatar">
+            <img src="./images/image-emily.jpg" alt="emilie" />
+          </div>
+          <div class="message">
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+          </div>
+          <div class="initials">
+            <span>Emily R.</span>
+            <span>Marketing Director</span>
+          </div>
+        </div>
+        <div class="client">
+          <div class="avatar">
+            <img src="./images/image-thomas.jpg" alt="" />
+          </div>
+          <div class="message">
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+          </div>
+          <div class="initials">
+            <span>Thomas S.</span>
+            <span>Chief Operating Officer</span>
+          </div>
+        </div>
+        <div class="client">
+          <div class="avatar">
+            <img src="./images/image-jennie.jpg" alt="" />
+          </div>
+          <div class="message">
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+          </div>
+          <div class="initials">
+            <span> Jennie F. </span>
+            <span>Business Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+    </section>
+
+    <section id="footer">
+      <div class="wrapper">
+        <div class="footer_logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <ul class="footer_links">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+        <div class="footer_social">
+          <span>
+            <img src="./images/icon-facebook.svg" alt="facebook_logo" />
+          </span>
+          <span>
+            <img src="./images/icon-instagram.svg" alt="instagram_logo" />
+          </span>
+          <span>
+            <img src="./images/icon-twitter.svg" alt="twitter_logo" />
+          </span>
+          <span>
+            <img src="./images/icon-pinterest.svg" alt="pinterest_logo" />
+          </span>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="mailto:mayinjadouglas6@gmail.com">Mayinja6</a>.
+      </div>
+    </section>
+
+    <script>
+      let breadcrumbEl = document.querySelector(".breadcrumb");
+      let navDropdownEl = document.querySelector(".nav-links");
+      breadcrumbEl.addEventListener("click", () => {
+        navDropdownEl.classList.toggle("nav-active");
+      });
+    </script>
+  </body>
+</html>
